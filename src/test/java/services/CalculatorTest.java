@@ -31,7 +31,7 @@ public class CalculatorTest {
     @Test
     public void testMultiply3And3() {
         Calculator sut = new Calculator();
-        String actual = sut.mutiply(3, 3);
+        String actual = sut.multiply(3, 3);
         assertThat(actual, is("9"));
     }
     
