@@ -30,7 +30,7 @@ public class Calculator {
 
     @GET
     @Path("divide")
-    public String multiply(@QueryParam("a")int a, @QueryParam("b")int b){
+    public String divide(@QueryParam("a")int a, @QueryParam("b")int b){
     	return Integer.toString(a / b);
     }
 
