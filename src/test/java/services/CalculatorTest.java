@@ -22,10 +22,17 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testsubtract3And1() {
+    public void testSubtract3And1() {
         Calculator sut = new Calculator();
         String actual = sut.subtract(3, 1);
         assertThat(actual, is("2"));
     }
 
+    @Test
+    public void testMultiply3And3() {
+        Calculator sut = new Calculator();
+        String actual = sut.mutiply(3, 3);
+        assertThat(actual, is("9"));
+    }
+    
 }

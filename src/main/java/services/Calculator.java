@@ -21,4 +21,10 @@ public class Calculator {
     public String subtract(@QueryParam("a")int a, @QueryParam("b")int b){
         return Integer.toString(a - b);
     }
+    
+    @GET
+    @Path("multiply")
+    public String multiply(@QueryParam("a")int a, @QueryParam("b")int b){
+    	return Integer.toString(a * b);
+    }
 }
