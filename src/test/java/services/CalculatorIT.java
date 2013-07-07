@@ -43,6 +43,17 @@ public class CalculatorIT extends JerseyTest {
 
         assertThat(actual, is("8"));
     }
+
+    @Test
+    public void testDivide() {
+        String actual = target("/calc/divide")
+                .queryParam("a", "4")
+                .queryParam("b", "2")
+                .request()
+                .get(String.class);
+
+        assertThat(actual, is("2"));
+    }    
     
     @Override
     protected Application configure() {

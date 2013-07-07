@@ -35,4 +35,11 @@ public class CalculatorTest {
         assertThat(actual, is("9"));
     }
     
+    @Test
+    public void testDivide4And2() {
+    	Calculator sut = new Calculator();
+    	String actual = sut.divide(4, 2);
+    	assertThat(actual, is("2"));
+    }
+    
 }
