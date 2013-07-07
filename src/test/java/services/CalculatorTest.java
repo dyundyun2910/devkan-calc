@@ -20,4 +20,12 @@ public class CalculatorTest {
         String actual = sut.add(1, 3);
         assertThat(actual, is("4"));
     }
+
+    @Test
+    public void testMinus3And1() {
+        Calculator sut = new Calculator();
+        String actual = sut.minus(3, 1);
+        assertThat(actual, is("2"));
+    }
+
 }
