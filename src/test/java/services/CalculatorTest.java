@@ -22,9 +22,9 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testMinus3And1() {
+    public void testsubtract3And1() {
         Calculator sut = new Calculator();
-        String actual = sut.minus(3, 1);
+        String actual = sut.subtract(3, 1);
         assertThat(actual, is("2"));
     }
 
